@@ -1,8 +1,8 @@
-import {useState} from 'react';
+import { useState } from 'react';
 
 export default function useToggle(initial = false) {
   // const [on, setOn] = useState(Boolean(initial));
-  const [on, setOn] = useState(!!install);
+  const [on, setOn] = useState(!!initial);
 
   const toggle = () => {
     setOn((prev) => !prev);
@@ -13,4 +13,6 @@ export default function useToggle(initial = false) {
   const setFalse = () => {
     setOn(false);
   };
+
+  return [on, toggle, { setTrue, setFalse }];
 }

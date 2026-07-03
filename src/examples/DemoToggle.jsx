@@ -1,18 +1,10 @@
+import React from 'react';
 import useToggle from '../hooks/useToggle.js';
-import { useState } from 'react';
 
 export default function DemoToggle() {
-  const [on, setOn] = useState(false);
-
-  const toggle = () => {
-    setOn((prev) => !prev);
-  };
-  const setTrue = () => {
-    setOn(true);
-  };
-  const setFalse = () => {
-    setOn(false);
-  };
+  // const test = useToggle(false);
+  // console.log(test);
+  const [on, toggle, { setTrue, setFalse }] = useToggle(false);
 
   return (
     <div>
