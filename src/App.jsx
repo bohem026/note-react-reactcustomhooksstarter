@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import DemoToggle from './examples/DemoToggle.jsx';
 import DemoLocalStorage from './examples/DemoLocalStorage.jsx';
 import DemoDebounce from './examples/DemoDebounce.jsx';
+import ModalDemo from './pages/ModalDemo.jsx';
+import AccordionDemo from './pages/AccordionDemo.jsx';
 
 const demos = [
   { key: 'toggle', label: 'useToggle', comp: <DemoToggle /> },
@@ -37,6 +39,11 @@ export default function App() {
       </div>
 
       <div style={{ border: '1px solid #eee', borderRadius: 12, padding: 16 }}>{active?.comp}</div>
+
+      <hr />
+      <ModalDemo />
+      <hr />
+      <AccordionDemo />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import AccordionItem from '../components/AccordionItem';
 
 export default function AccordionDemo() {
+
   return (
     <div style={{ padding: 16 }}>
       <h2>아코디언 데모</h2>

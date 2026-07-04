@@ -1,7 +1,8 @@
 import useToggle from '../hooks/useToggle';
+import Modal from '../components/Modal';
 
 export default function ModalDemo() {
-  const [open, toggle {setTrue: openModal, setFalse: cloaseModal}]
+  const [open, toggle, { setTrue: openModal, setFalse: closeModal }] = useToggle(false);
 
   return (
     <>
